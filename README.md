@@ -1,3 +1,5 @@
+## 🚀 PulseGrid v1.0.0
+
 # PulseGrid — Real-Time System Monitoring Dashboard
 
 A lightweight, real-time monitoring system that collects, processes, and visualizes system metrics with a modern web dashboard.
