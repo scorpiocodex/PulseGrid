@@ -1,8 +1,27 @@
-## 🚀 PulseGrid v1.0.0
+# 🚀 PulseGrid — Real-Time System Monitoring Dashboard
 
-# PulseGrid — Real-Time System Monitoring Dashboard
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/pulsegrid/pulsegrid)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11+-blue)](https://python.org)
+[![React](https://img.shields.io/badge/react-18+-blue)](https://react.dev)
 
-A lightweight, real-time monitoring system that collects, processes, and visualizes system metrics with a modern web dashboard.
+A lightweight, developer-friendly monitoring system that collects, processes, and visualizes real-time system metrics through a modern web dashboard.
+
+## Why PulseGrid?
+
+PulseGrid is designed as a lightweight alternative to complex monitoring systems like Prometheus and Grafana.
+
+It focuses on:
+
+- **Simplicity** over heavy configuration
+- **Real-time visibility** for developers
+- **Easy local setup** using Docker
+
+## Quick Preview
+
+- Live CPU, Memory, Disk metrics
+- Real-time updating charts
+- Offline detection with retry handling
 
 ## Features
 
@@ -12,6 +31,13 @@ A lightweight, real-time monitoring system that collects, processes, and visuali
 - **Live Charts**: Smooth, updating visualizations with gradient fills
 - **Status State Machine**: Live / Updating / Offline indicators
 - **Docker Deployment**: Full containerized stack
+
+## Use Cases
+
+- Monitor local development environments
+- Debug performance issues in applications
+- Learn system monitoring concepts
+- Lightweight alternative for small projects
 
 ## Tech Stack
 
@@ -86,8 +112,8 @@ Copy `.env.example` to `.env` and configure:
 ```bash
 DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/pulsegrid
 REDIS_URL=redis://localhost:6379/0
-TELEGRAM_BOT_TOKEN=   # Optional: for alerts
-TELEGRAM_CHAT_ID=     # Optional: for alerts
+TELEGRAM_TOKEN=      # Optional: for alerts
+TELEGRAM_CHAT_ID=    # Optional: for alerts
 ```
 
 ## Development
